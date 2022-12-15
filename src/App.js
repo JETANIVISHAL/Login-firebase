@@ -10,7 +10,7 @@ import {
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
 import Home from './Componente/Home';
 import React, {useEffect} from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
     let authToken = sessionStorage.getItem('Auth Token')
 
     if (authToken) {
-      navigate('/home')
+      
     }
   }, [])
 

@@ -14,7 +14,7 @@ function Home() {
         }
 
         if (!authToken) {
-            navigate('/login')
+            
         }
     }, [])
   
