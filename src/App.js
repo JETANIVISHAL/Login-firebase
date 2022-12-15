@@ -6,7 +6,7 @@ import {
   Route,
   useNavigate,
 } from "react-router-dom";
-
+import app from './firebase-config';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
 import Home from './Componente/Home';
 import React, {useEffect} from 'react';
