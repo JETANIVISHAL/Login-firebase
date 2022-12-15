@@ -4,9 +4,9 @@ import { useState } from 'react';
 import {
   Routes,
   Route,
-  useNavigate
+  useNavigate,
 } from "react-router-dom";
-import app from './firebase-config';
+
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth'
 import Home from './Componente/Home';
 import React, {useEffect} from 'react';
@@ -60,10 +60,11 @@ function App() {
         <div className="App">
           <>
           <Routes>
-            <Route path='/login' element={<Form1 title="Login" setEmail={setEmail} setPassword={setPassword} handleAction={() => handleAction(1)} />} />
-            <Route path='/register' element={<Form1 title="register " setEmail={setEmail} setPassword={setPassword} handleAction={() => handleAction(2)}/>}/>
+            <Route path='/login' active  element={<Form1 title="Login" setEmail={setEmail} setPassword={setPassword} handleAction={() => handleAction(1)} />} />
+            <Route path='/register' element={<Form1 title="Register " setEmail={setEmail} setPassword={setPassword} handleAction={() => handleAction(2)}/>}/>
             <Route path='/home' element={<Home/>}/>
             <Route path='/' element={<Form1 title="Login" setEmail={setEmail} setPassword={setPassword} handleAction={() => handleAction(1)} />} />
+            
           </Routes>
           </>
         </div>

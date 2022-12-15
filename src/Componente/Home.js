@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 function Home() {
     const handleLogout = () => {
         sessionStorage.removeItem('Auth Token');
-        navigate('/login')
+        navigate('/register')
     }
     let navigate = useNavigate();
     useEffect(() => {

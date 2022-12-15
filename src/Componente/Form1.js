@@ -10,7 +10,8 @@ const Form1 = ({title, setEmail, setPassword, handleAction }) => {
     console.log('Failed:', errorInfo);
   };
   return (
-    <>
+    <div style={{display: "flex", justifyContent: "center", alignItems: "center", height:"100vh"}}>
+    <div>
     <div>
       <h3>
         {title}
@@ -18,12 +19,7 @@ const Form1 = ({title, setEmail, setPassword, handleAction }) => {
     </div>
     <Form
       name="basic"
-      labelCol={{
-        span: 6,
-      }}
-      wrapperCol={{
-        span: 12,
-      }}
+     
       initialValues={{
         remember: true,
       }}
@@ -78,7 +74,8 @@ const Form1 = ({title, setEmail, setPassword, handleAction }) => {
     </Form>
     <Button1 title={title} handleAction={handleAction}/>
     
-    </>
+    </div>
+    </div>
   );
 };
 export default Form1;
