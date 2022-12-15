@@ -54,7 +54,7 @@ function App() {
     if (authToken) {
       navigate('/home')
     }
-  }, [navigate])
+  }, [navigate  ])
 
   return (
         <div className="App">
